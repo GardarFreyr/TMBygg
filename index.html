@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="is">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="TM bygg ehf. — múrverk og múrhúðun í Reykjanesbæ frá 2004. Hafðu samband í síma 897 6678.">
+<title>TM bygg ehf. — Múrverk í Reykjanesbæ</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap">
+<style>
+body{margin:0;background:#F5F4F0}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+a{color:#252725}a:hover{color:#8A5E40}
+img{display:block;max-width:100%}
+.tm{font-family:Manrope,system-ui,sans-serif;color:#252725;background:#F5F4F0;-webkit-font-smoothing:antialiased;overflow-x:clip}
+.wrap{width:100%;max-width:1360px;margin:0 auto;padding-inline:clamp(20px,4vw,56px)}
+:focus-visible{outline:2px solid #A47555;outline-offset:3px}
+.skip{position:absolute;left:-9999px;top:8px;z-index:100;background:#252725;color:#F5F4F0;padding:12px 16px}
+.skip:focus{left:8px;color:#F5F4F0}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#5F625F;display:flex;align-items:center;gap:14px;margin:0}
+.eyebrow::before{content:"";width:28px;height:1px;background:#A47555}
+.h2{font-weight:700;font-size:clamp(34px,4.6vw,64px);line-height:1.02;letter-spacing:-.035em;margin:0;text-wrap:balance}
+.lead{font-size:clamp(17px,1.35vw,19px);line-height:1.6;color:#3E413E;margin:0;max-width:56ch}
+.small{font-size:14px;line-height:1.55;color:#5F625F}
+/* header */
+.hdr{position:sticky;top:0;z-index:50;background:rgba(245,244,240,.94);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid #D9D9D5}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px}
+.logo{font-weight:800;font-size:19px;letter-spacing:.14em;text-decoration:none;color:#252725;display:flex;align-items:center;gap:10px;min-height:44px}
+.logo-mark{width:14px;height:14px;background:#252725;box-shadow:5px 5px 0 0 #A47555}
+.nav{display:flex;align-items:center;gap:clamp(18px,2.4vw,36px)}
+.nav a{font-size:14px;font-weight:600;text-decoration:none;color:#252725;padding:12px 0;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:6px;height:1px;background:#A47555;transition:right .3s ease}
+.nav a:hover::after,.nav a:focus-visible::after{right:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;padding:0 22px;font:700 13px/1 Manrope,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:1px solid #252725;transition:background .25s ease,color .25s ease,border-color .25s ease;cursor:pointer}
+.btn-dark{background:#252725;color:#F5F4F0}
+.btn-dark:hover{background:#A47555;border-color:#A47555;color:#fff}
+.btn-line{background:transparent;color:#252725}
+.btn-line:hover{background:#252725;color:#F5F4F0}
+.btn .arr{width:16px;height:1px;background:currentColor;position:relative;transition:width .25s ease}
+.btn .arr::after{content:"";position:absolute;right:0;top:-3px;width:7px;height:7px;border-top:1px solid currentColor;border-right:1px solid currentColor;transform:rotate(45deg)}
+.btn:hover .arr{width:24px}
+.menu-btn{display:none;background:none;border:1px solid #252725;width:48px;height:48px;align-items:center;justify-content:center;cursor:pointer;color:#252725;padding:0}
+.mnav{border-top:1px solid #D9D9D5;background:#F5F4F0;padding:8px 0 24px}
+.mnav a{display:flex;justify-content:space-between;align-items:center;min-height:56px;font-size:22px;font-weight:700;letter-spacing:-.02em;text-decoration:none;border-bottom:1px solid #D9D9D5}
+.mnav a span{font-size:12px;font-weight:600;color:#5F625F;letter-spacing:.1em}
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(32px,4vw,72px);align-items:stretch;padding-top:clamp(40px,6vw,88px)}
+.hero-copy{display:flex;flex-direction:column;justify-content:space-between;gap:48px;padding-bottom:clamp(8px,2vw,24px)}
+.h1{font-weight:800;font-size:clamp(46px,6.6vw,104px);line-height:.95;letter-spacing:-.045em;margin:28px 0 0}
+.h1 span{display:block}
+.h1 .soft{color:#8D918D}
+.hero-media{position:relative;min-height:clamp(420px,68vh,760px);overflow:hidden;background:#D9D9D5}
+.hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.cap{position:absolute;left:0;bottom:0;background:#F5F4F0;color:#3E413E;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid #252725;margin-top:clamp(40px,5vw,72px)}
+.facts div{padding:20px 20px 22px 0;border-right:1px solid #D9D9D5}
+.facts div+div{padding-left:20px}
+.facts div:last-child{border-right:0}
+.facts dt{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#5F625F;margin-bottom:8px}
+.facts dd{margin:0;font-size:16px;font-weight:600}
+.facts a{text-decoration:none}
+/* sections */
+.sec{padding-block:clamp(88px,11vw,168px)}
+.intro{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,104px);align-items:end}
+.intro-media{aspect-ratio:4/5;overflow:hidden;background:#D9D9D5;position:relative}
+.intro-media img{width:100%;height:100%;object-fit:cover}
+.intro-text{display:flex;flex-direction:column;gap:32px;padding-bottom:8px}
+.kv{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:1px solid #D9D9D5;margin-top:8px}
+.kv div{padding:18px 0;border-bottom:1px solid #D9D9D5}
+.kv div:nth-child(odd){padding-right:20px}
+.kv dt{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#5F625F;margin-bottom:6px}
+.kv dd{margin:0;font-size:16px;font-weight:600;line-height:1.4}
+/* services */
+.svc-head{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:40px;align-items:end;margin-bottom:clamp(48px,6vw,88px)}
+.svc-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(24px,3vw,48px);row-gap:clamp(56px,6vw,96px)}
+.svc{display:flex;flex-direction:column;gap:22px}
+.svc:nth-child(even){margin-top:clamp(0px,8vw,120px)}
+.svc-img{aspect-ratio:5/4;overflow:hidden;background:#D9D9D5}
+.svc-img img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.svc:hover .svc-img img{transform:scale(1.035)}
+.svc-top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;border-top:1px solid #252725;padding-top:18px}
+.svc-n{font-size:13px;font-weight:700;color:#8A5E40;letter-spacing:.1em}
+.svc h3{font-size:clamp(26px,2.4vw,34px);font-weight:700;letter-spacing:-.03em;margin:0;flex:1}
+.tag{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 10px;border:1px solid #D9D9D5;color:#5F625F;white-space:nowrap}
+.tag-ok{border-color:#252725;color:#252725}
+.svc p{margin:0;font-size:16px;line-height:1.6;color:#3E413E;max-width:46ch}
+/* gallery */
+.gal-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:24px 40px;margin-bottom:clamp(40px,5vw,72px)}
+.ref{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#252725;border:1px solid #252725;padding:12px 16px}
+.ref i{width:8px;height:8px;background:#A47555;display:block}
+.gal{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(12px,1.6vw,24px)}
+.gal figure{margin:0;display:flex;flex-direction:column;gap:12px}
+.gal .ph{overflow:hidden;background:#D9D9D5;position:relative}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.gal figure:hover img{transform:scale(1.03)}
+.gal figcaption{display:flex;justify-content:space-between;gap:12px;font-size:13px;font-weight:600;color:#3E413E}
+.gal figcaption span{color:#5F625F;font-weight:500}
+.g1{grid-column:1 / span 7}.g1 .ph{aspect-ratio:7/6}
+.g2{grid-column:9 / span 4;align-self:end}.g2 .ph{aspect-ratio:4/5}
+.g3{grid-column:2 / span 4;margin-top:clamp(0px,4vw,64px)}.g3 .ph{aspect-ratio:3/4}
+.g4{grid-column:7 / span 6;margin-top:clamp(0px,9vw,140px)}.g4 .ph{aspect-ratio:4/3}
+/* dark */
+.dark{background:#252725;color:#F5F4F0;position:relative;overflow:hidden}
+.dark .eyebrow{color:#C39270}
+.dark .eyebrow::before{background:#C39270}
+.dark-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(40px,6vw,104px);align-items:stretch}
+.dark-media{position:relative;min-height:520px;overflow:hidden}
+.dark-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05);opacity:.9}
+.lines{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(to right,rgba(245,244,240,.06) 1px,transparent 1px);background-size:calc(100% / 12) 100%}
+.stat{display:grid;grid-template-columns:minmax(0,1fr);border-top:1px solid rgba(245,244,240,.22)}
+.stat div{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:24px;align-items:baseline;padding:28px 0;border-bottom:1px solid rgba(245,244,240,.22)}
+.stat dt{font-size:clamp(32px,3.6vw,52px);font-weight:800;letter-spacing:-.04em;line-height:1}
+.stat dd{margin:0;font-size:15px;line-height:1.55;color:#C9CBC7}
+/* contact */
+.contact{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:clamp(40px,6vw,104px)}
+.big-tel{display:block;font-size:clamp(44px,6vw,88px);font-weight:800;letter-spacing:-.045em;line-height:1;text-decoration:none;margin-top:8px}
+.big-tel:hover{color:#8A5E40}
+.clist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid #252725;margin-top:48px}
+.clist div{padding:20px 0;border-bottom:1px solid #D9D9D5}
+.clist div:nth-child(odd){padding-right:20px}
+.clist dt{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#5F625F;margin-bottom:6px}
+.clist dd{margin:0;font-size:17px;font-weight:600;word-break:break-word}
+.clist a{text-decoration-thickness:1px;text-underline-offset:4px}
+.form{background:#ECEBE6;padding:clamp(24px,3.4vw,48px);display:flex;flex-direction:column;gap:20px;border-top:3px solid #A47555}
+.demo{display:flex;gap:12px;align-items:flex-start;font-size:13px;line-height:1.5;color:#3E413E;background:#F5F4F0;padding:14px 16px;border:1px dashed #8D918D}
+.demo b{font-weight:700;color:#252725;white-space:nowrap}
+.fld{display:flex;flex-direction:column;gap:8px}
+.fld label{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#3E413E}
+.fld input,.fld select,.fld textarea{font:500 16px/1.4 Manrope,system-ui,sans-serif;color:#252725;background:#F5F4F0;border:1px solid #B9BBB6;border-radius:0;padding:14px 14px;min-height:50px;width:100%}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:2px solid #A47555;outline-offset:0;border-color:#A47555}
+.row2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.btn[disabled]{background:#B9BBB6;border-color:#B9BBB6;color:#3E413E;cursor:not-allowed}
+/* footer */
+.ftr{border-top:1px solid #252725;padding-block:56px 40px}
+.ftr-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,2fr) minmax(0,3fr) minmax(0,3fr);gap:32px}
+.ftr h2{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#5F625F;margin:0 0 14px}
+.ftr ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.ftr li a,.ftr p{font-size:15px;line-height:1.7;margin:0;text-decoration:none}
+.ftr li a{display:inline-block;padding:4px 0}
+.ftr li a:hover{text-decoration:underline;text-underline-offset:4px}
+.ftr-base{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px;margin-top:56px;padding-top:24px;border-top:1px solid #D9D9D5;font-size:12px;line-height:1.6;color:#5F625F}
+.credits{max-width:80ch}
+/* reveal */
+@media (prefers-reduced-motion:no-preference){
+@supports (animation-timeline:view()){
+.rv{animation:rv linear both;animation-timeline:view();animation-range:entry 0% cover 28%}
+.rv-img{animation:rvimg linear both;animation-timeline:view();animation-range:entry 0% cover 35%}
+}
+}
+@keyframes rv{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes rvimg{from{clip-path:inset(10% 0 0 0);opacity:.4}to{clip-path:inset(0 0 0 0);opacity:1}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+/* responsive */
+@media (max-width:1080px){
+.nav{display:none}
+.menu-btn{display:inline-flex}
+.hdr-cta{display:none}
+}
+@media (max-width:900px){
+.hero,.intro,.svc-head,.dark-grid,.contact{grid-template-columns:minmax(0,1fr)}
+.hero-media{min-height:0;aspect-ratio:4/5}
+.facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+.facts div{padding:18px 16px 18px 0;border-bottom:1px solid #D9D9D5}
+.facts div+div{padding-left:0}
+.facts div:nth-child(even){padding-left:16px;border-right:0}
+.intro-media{order:2;aspect-ratio:4/3}
+.svc:nth-child(even){margin-top:0}
+.g1{grid-column:1 / -1}
+.g2{grid-column:1 / span 6}
+.g3{grid-column:7 / span 6;margin-top:0}
+.g4{grid-column:1 / -1;margin-top:0}
+.dark-media{min-height:0;aspect-ratio:16/10;order:2}
+.ftr-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+.hdr-in{height:64px}
+html{scroll-padding-top:72px}
+.svc-list{grid-template-columns:minmax(0,1fr)}
+.kv,.clist,.row2{grid-template-columns:minmax(0,1fr)}
+.kv div:nth-child(odd),.clist div:nth-child(odd){padding-right:0}
+.g2,.g3{grid-column:1 / -1}
+.g2 .ph,.g3 .ph{aspect-ratio:4/3}
+.hero-cta{flex-direction:column;align-items:stretch}
+.stat div{grid-template-columns:minmax(0,1fr);gap:10px}
+.ftr-grid{grid-template-columns:minmax(0,1fr)}
+.hero-media{aspect-ratio:1/1}
+}
+/* standalone: menu toggle */
+.menu-btn .i-close{display:none}
+.menu-btn[aria-expanded="true"] .i-close{display:block}
+.menu-btn[aria-expanded="true"] .i-open{display:none}
+.mnav[hidden]{display:none}
+@media (min-width:1081px){.mnav{display:none}}
+</style>
+</head>
+<body>
+<div class="tm" style="min-height: 100vh; width: 100%">
+<a class="skip" href="#efni">Fara beint í efni</a>
+
+<header class="hdr">
+<div class="wrap hdr-in">
+<a class="logo" href="#forsida" aria-label="TM bygg — forsíða"><span class="logo-mark" aria-hidden="true"></span>TM BYGG</a>
+<nav class="nav" aria-label="Aðalvalmynd">
+<a href="#forsida">Forsíða</a>
+<a href="#thjonusta">Þjónusta</a>
+<a href="#um">Um okkur</a>
+<a href="#verkefni">Verkefni</a>
+<a href="#samband">Hafa samband</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 12px">
+<a class="btn btn-dark hdr-cta" href="#samband">Fá tilboð</a>
+<button class="menu-btn" type="button" aria-controls="farsimavalmynd" aria-expanded="false" aria-label="Opna valmynd">
+<svg class="i-close" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 4l12 12M16 4L4 16"></path></svg>
+<svg class="i-open" width="22" height="14" viewBox="0 0 22 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M0 1h22M0 7h22M0 13h22"></path></svg>
+</button>
+</div>
+</div>
+<nav id="farsimavalmynd" hidden class="mnav" aria-label="Farsímavalmynd">
+<div class="wrap">
+<a href="#forsida">Forsíða <span>01</span></a>
+<a href="#thjonusta">Þjónusta <span>02</span></a>
+<a href="#um">Um okkur <span>03</span></a>
+<a href="#verkefni">Verkefni <span>04</span></a>
+<a href="#samband">Hafa samband <span>05</span></a>
+<div style="display: flex; flex-direction: column; gap: 12px; margin-top: 24px">
+<a class="btn btn-dark" href="#samband" style="font-size: 13px; min-height: 52px; border-bottom: 0; justify-content: center">Fá tilboð</a>
+<a class="btn btn-line" href="tel:+3548976678" style="font-size: 13px; min-height: 52px; justify-content: center">Hringja · 897 6678</a>
+</div>
+</div>
+</nav>
+</header>
+
+<main id="efni">
+
+<section id="forsida" aria-labelledby="hero-titill">
+<div class="wrap">
+<div class="hero">
+<div class="hero-copy">
+<div>
+<p class="eyebrow">Reykjanesbær · Frá 2004</p>
+<h1 id="hero-titill" class="h1"><span>Vönduð</span><span>vinnubrögð.</span><span class="soft">Sterkur grunnur.</span></h1>
+</div>
+<div style="display: flex; flex-direction: column; gap: 32px">
+<p class="lead">TM bygg ehf. er íslenskt fyrirtæki með starfsemi á sviði múrverks og byggingarframkvæmda.</p>
+<div class="hero-cta" style="display: flex; flex-wrap: wrap; gap: 12px">
+<a class="btn btn-dark" href="#samband">Hafa samband <span class="arr" aria-hidden="true"></span></a>
+<a class="btn btn-line" href="#thjonusta">Skoða þjónustu</a>
+</div>
+</div>
+</div>
+<figure class="hero-media" style="margin: 0">
+<img src="img/hero.jpg" alt="Steyptur veggur og stigi í mjúkri dagsbirtu" fetchpriority="high" width="2400" height="1600">
+<figcaption class="cap">Viðmiðunarmynd · ekki verk TM bygg</figcaption>
+</figure>
+</div>
+<dl class="facts" style="margin-bottom: 0">
+<div><dt>Stofnað</dt><dd>2004</dd></div>
+<div><dt>Aðsetur</dt><dd>Reykjanesbær</dd></div>
+<div><dt>Sími</dt><dd><a href="tel:+3548976678">897 6678</a></dd></div>
+<div><dt>Netfang</dt><dd><a href="mailto:tmt@simnet.is">tmt@simnet.is</a></dd></div>
+</dl>
+</div>
+</section>
+
+<section id="um" class="sec" aria-labelledby="um-titill">
+<div class="wrap intro">
+<figure class="intro-media rv-img" style="margin: 0">
+<img src="img/intro.jpg" alt="Múrari leggur steypuhleðslustein með múrskeið" loading="lazy" decoding="async" width="1600" height="1067" style="object-position: 60% center">
+<figcaption class="cap">Viðmiðunarmynd</figcaption>
+</figure>
+<div class="intro-text rv">
+<p class="eyebrow">Um TM bygg</p>
+<h2 id="um-titill" class="h2">Reynsla sem skiptir&nbsp;máli.</h2>
+<p class="lead">TM bygg ehf. hefur starfað frá árinu 2004 og er með aðsetur í Reykjanesbæ. Fyrirtækið starfar á sviði múrverks og er skráð í fyrirtækjaskrá undir múrhúðun.</p>
+<p class="lead">TM bygg er á félagaskrá Múrarameistarafélags Reykjavíkur. Tengiliður fyrirtækisins er Trausti Már Traustason.</p>
+<dl class="kv">
+<div><dt>Fullt nafn</dt><dd>TM bygg ehf.</dd></div>
+<div><dt>Kennitala</dt><dd>450804-2820</dd></div>
+<div><dt>Skráð</dt><dd>6. ágúst 2004</dd></div>
+<div><dt>Starfsgrein</dt><dd>Múrhúðun (ÍSAT 43.31)</dd></div>
+</dl>
+</div>
+</div>
+</section>
+
+<section id="thjonusta" class="sec" aria-labelledby="thj-titill" style="padding-top: 0">
+<div class="wrap">
+<div class="svc-head rv">
+<div style="display: flex; flex-direction: column; gap: 28px">
+<p class="eyebrow">Þjónusta</p>
+<h2 id="thj-titill" class="h2">Fagleg vinnubrögð í hverju&nbsp;verki.</h2>
+</div>
+<p class="small" style="margin: 0; max-width: 44ch">Kjarninn í starfseminni er múrverk og múrhúðun. Lýsingarnar eru tillögur að texta og þjónustuliðir merktir „Til staðfestingar“ verða yfirfarnir með TM bygg.</p>
+</div>
+<div class="svc-list">
+<article class="svc">
+<div class="svc-img rv-img"><img src="img/murverk.jpg" alt="Múrskeið og múr á hlöðnum múrsteinsvegg" loading="lazy" decoding="async" width="1400" height="933"></div>
+<div class="svc-top"><span class="svc-n">01</span><h3>Múrverk</h3><span class="tag tag-ok">Kjarnastarfsemi</span></div>
+<p>Almennt múrverk innanhúss og utan, í nýbyggingum jafnt sem eldra húsnæði.</p>
+</article>
+<article class="svc">
+<div class="svc-img rv-img"><img src="img/murhudun.jpg" alt="Hendur bera múr á vegg með spaða" loading="lazy" decoding="async" width="1400" height="933"></div>
+<div class="svc-top"><span class="svc-n">02</span><h3>Múrhúðun</h3><span class="tag tag-ok">Skráð starfsemi</span></div>
+<p>Múrhúðun veggja innanhúss og utanhúss. Jafnt og vandað yfirborð sem tekur vel við næsta verkþætti.</p>
+</article>
+<article class="svc">
+<div class="svc-img rv-img"><img src="img/flisar.jpg" alt="Hvítar veggflísar lagðar með höndum" loading="lazy" decoding="async" width="1400" height="2100" style="object-position: center 60%"></div>
+<div class="svc-top"><span class="svc-n">03</span><h3>Flísalagnir</h3><span class="tag">Til staðfestingar</span></div>
+<p>Flísalögn á gólf og veggi, til dæmis í baðherbergjum og eldhúsum, með nákvæmri undirvinnu og hreinum frágangi.</p>
+</article>
+<article class="svc">
+<div class="svc-img rv-img"><img src="img/vidgerdir.jpg" alt="Gróf múrhúð sem flagnar af múrsteinum" loading="lazy" decoding="async" width="1400" height="933"></div>
+<div class="svc-top"><span class="svc-n">04</span><h3>Viðgerðir og endurbætur</h3><span class="tag">Til staðfestingar</span></div>
+<p>Múrviðgerðir á eldra húsnæði, sprunguviðgerðir og endurnýjun múrhúðar.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section id="verkefni" class="sec" aria-labelledby="verk-titill" style="padding-top: 0">
+<div class="wrap">
+<div class="gal-head rv">
+<div style="display: flex; flex-direction: column; gap: 28px">
+<p class="eyebrow">Vinnubrögð og frágangur</p>
+<h2 id="verk-titill" class="h2">Gæði sjást í smáatriðunum.</h2>
+</div>
+<p class="ref"><i aria-hidden="true"></i>Viðmiðunarmyndir — ekki verkefni TM bygg</p>
+</div>
+<div class="gal">
+<figure class="g1 rv">
+<div class="ph"><img src="img/g1.jpg" alt="Steyptar tröppur með skuggum trjágreina" loading="lazy" decoding="async" width="1400" height="2100" style="object-position: center 65%"></div>
+<figcaption>Steypt yfirborð <span>Viðmiðun</span></figcaption>
+</figure>
+<figure class="g2 rv">
+<div class="ph"><img src="img/g2.jpg" alt="Rúmfræðilegur steyptur stigi í sólarljósi" loading="lazy" decoding="async" width="1400" height="2100"></div>
+<figcaption>Skarpar línur <span>Viðmiðun</span></figcaption>
+</figure>
+<figure class="g3 rv">
+<div class="ph"><img src="img/g3.jpg" alt="Dagsbirta fellur á sléttan múrhúðaðan vegg" loading="lazy" decoding="async" width="1400" height="2100"></div>
+<figcaption>Slétt múrhúð <span>Viðmiðun</span></figcaption>
+</figure>
+<figure class="g4 rv">
+<div class="ph"><img src="img/g4.jpg" alt="Ljósar gólfflísar í sturtu með glervegg" loading="lazy" decoding="async" width="1400" height="933"></div>
+<figcaption>Flísalögn og fúgur <span>Viðmiðun</span></figcaption>
+</figure>
+</div>
+<p class="small" style="margin: 40px 0 0; max-width: 60ch">Hér koma myndir af raunverulegum verkum TM bygg þegar þær liggja fyrir.</p>
+</div>
+</section>
+
+<section class="dark sec" aria-labelledby="reynsla-titill">
+<div class="lines" aria-hidden="true"></div>
+<div class="wrap dark-grid" style="position: relative">
+<div class="dark-media rv-img">
+<img src="img/dark.jpg" alt="Steinsteyptir kubbar í svarthvítu" loading="lazy" decoding="async" width="1400" height="2100">
+<p class="cap" style="margin: 0; background: #252725; color: #C9CBC7">Viðmiðunarmynd</p>
+</div>
+<div class="rv" style="display: flex; flex-direction: column; gap: 40px; justify-content: center">
+<p class="eyebrow">Reynsla</p>
+<h2 id="reynsla-titill" class="h2" style="color: #F5F4F0">Byggt á traustum grunni.</h2>
+<dl class="stat" style="margin: 0">
+<div><dt>2004</dt><dd>Skráð í fyrirtækjaskrá 6. ágúst 2004.</dd></div>
+<div><dt>Reykjanesbær</dt><dd>Aðsetur að Steinási 31, 260 Reykjanesbæ.</dd></div>
+<div><dt>Múrverk</dt><dd>Á félagaskrá Múrarameistarafélags Reykjavíkur.</dd></div>
+</dl>
+</div>
+</div>
+</section>
+
+<section id="samband" class="sec" aria-labelledby="samband-titill">
+<div class="wrap contact">
+<div class="rv">
+<p class="eyebrow">Hafðu samband</p>
+<h2 id="samband-titill" class="h2" style="margin-top: 28px">Ræðum næsta verkefni.</h2>
+<p class="lead" style="margin-top: 24px">Hringdu eða sendu tölvupóst til að fá tilboð eða ræða verkið.</p>
+<a class="big-tel" href="tel:+3548976678" aria-label="Hringja í síma 897 6678" style="margin-top: 40px">897&nbsp;6678</a>
+<dl class="clist">
+<div><dt>Tengiliður</dt><dd>Trausti Már Traustason</dd></div>
+<div><dt>Netfang</dt><dd><a href="mailto:tmt@simnet.is">tmt@simnet.is</a></dd></div>
+<div><dt>Sími</dt><dd><a href="tel:+3548976678">897 6678</a></dd></div>
+<div><dt>Staðsetning</dt><dd>Reykjanesbær</dd></div>
+</dl>
+</div>
+<form class="form rv" aria-labelledby="form-titill" aria-describedby="form-demo">
+<h3 id="form-titill" style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -.02em">Fyrirspurn</h3>
+<p id="form-demo" class="demo" style="margin: 0"><b>Sýnidæmi.</b> Þetta form er tillaga að útliti og sendir engin gögn. Notaðu síma eða netfang hér til hliðar.</p>
+<div class="row2">
+<div class="fld"><label for="f-nafn">Nafn</label><input id="f-nafn" name="nafn" type="text" autocomplete="name"></div>
+<div class="fld"><label for="f-simi">Sími eða netfang</label><input id="f-simi" name="samband" type="text" autocomplete="email"></div>
+</div>
+<div class="fld"><label for="f-verk">Tegund verks</label>
+<select id="f-verk" name="verk">
+<option>Veldu…</option>
+<option>Múrverk</option>
+<option>Múrhúðun</option>
+<option>Flísalögn</option>
+<option>Viðgerðir og endurbætur</option>
+<option>Annað</option>
+</select>
+</div>
+<div class="fld"><label for="f-lysing">Lýsing á verki</label><textarea id="f-lysing" name="lysing" rows="5"></textarea></div>
+<button class="btn" type="submit" disabled="disabled" aria-describedby="form-demo" style="align-self: flex-start">Senda fyrirspurn — óvirkt í sýnidæmi</button>
+</form>
+</div>
+</section>
+
+</main>
+
+<footer class="ftr">
+<div class="wrap">
+<div class="ftr-grid">
+<div>
+<a class="logo" href="#forsida" aria-label="TM bygg — efst á síðu"><span class="logo-mark" aria-hidden="true"></span>TM BYGG</a>
+<p style="margin-top: 16px; color: #5F625F; max-width: 32ch">Múrverk og múrhúðun í Reykjanesbæ frá 2004.</p>
+</div>
+<nav aria-label="Valmynd í fæti">
+<h2>Valmynd</h2>
+<ul>
+<li><a href="#forsida">Forsíða</a></li>
+<li><a href="#thjonusta">Þjónusta</a></li>
+<li><a href="#um">Um okkur</a></li>
+<li><a href="#verkefni">Verkefni</a></li>
+<li><a href="#samband">Hafa samband</a></li>
+</ul>
+</nav>
+<div>
+<h2>Samband</h2>
+<ul>
+<li><a href="tel:+3548976678">897 6678</a></li>
+<li><a href="mailto:tmt@simnet.is">tmt@simnet.is</a></li>
+<li><p>Trausti Már Traustason</p></li>
+</ul>
+</div>
+<div>
+<h2>Fyrirtækið</h2>
+<p>TM bygg ehf.<br>Steinási 31, 260 Reykjanesbæ<br>Kt. 450804-2820<br>Stofnað 2004</p>
+</div>
+</div>
+<div class="ftr-base">
+<p style="margin: 0">© TM bygg ehf. · Sýnidæmi hannað af Gardarvef</p>
+<p class="credits" style="margin: 0">Viðmiðunarmyndir af Unsplash (Unsplash-leyfi), ekki verk TM bygg: Dorsa Masghati, Solømen, Gowtham AGM, @sasun1990, @charlesdeluvio, Bashy, Tanner Vote, Palina Kharlanovich, همَّام, Point3D Commercial Imaging Ltd., @uvesanchez.</p>
+</div>
+</div>
+</footer>
+</div>
+<script>
+(function(){
+  var btn=document.querySelector('.menu-btn'), nav=document.getElementById('farsimavalmynd');
+  function set(open){btn.setAttribute('aria-expanded',open?'true':'false');btn.setAttribute('aria-label',open?'Loka valmynd':'Opna valmynd');nav.hidden=!open;}
+  btn.addEventListener('click',function(){set(nav.hidden);});
+  nav.addEventListener('click',function(e){if(e.target.closest('a'))set(false);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!nav.hidden){set(false);btn.focus();}});
+  window.matchMedia('(min-width:1081px)').addEventListener('change',function(m){if(m.matches)set(false);});
+  // Sýnidæmi: formið sendir engin gögn.
+  document.querySelector('form.form').addEventListener('submit',function(e){e.preventDefault();});
+})();
+</script>
+</body>
+</html>
